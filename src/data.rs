@@ -20,18 +20,10 @@ pub fn wifi_scan(data:&mut Self)->&mut Self{
     data
 }
 
- /*pb fn  thread_wifi (data: &'static mut Self)->&mut Self{
-let handle =thread::spawn(move || {
-    *data=AppState{name:wifi_scan_to_string()};
-    data
-});
-
-handle.join().unwrap()
-  
- }*/ // work to be done here 
+ 
  
 } 
-pub fn _wifi_scan_to_string()->String
+pub fn wifi_scan_to_string()->String
 {
     
        let data_wifi=wifiscanner::scan().unwrap();
