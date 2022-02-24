@@ -6,5 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
  
 [dependencies]
-druid = { version = "0.7.0", features = ["im"] }
+druid = { git="https://github.com/linebender/druid"}
 wifiscanner = {git="https://github.com/booyaa/wifiscanner"}
+
+chrono = "0.4.19"
+cron = "0.9.0"
+cronjob = "0.3.17"
+[profile.release]
+panic = 'abort'
