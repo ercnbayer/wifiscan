@@ -33,11 +33,11 @@ fn wifi_update(event_sink: druid::ExtEventSink) {
    
       
 
-        let data_wifi_clone = data_wifi.clone();
+        
         
         event_sink.add_idle_callback(move |data: &mut AppState| {
            
-            *data =AppState { name: data_wifi_clone };
+            *data =AppState { name: data_wifi };
           
         });
         thread::sleep(Duration::from_millis(20));
