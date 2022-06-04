@@ -9,7 +9,7 @@ cd wifiscan
 ``` cargo install```
 
 ## Usage
-```
+```cargo run```
 
-cargo run
-```
+
+
