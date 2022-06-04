@@ -10,6 +10,6 @@ cd wifiscan
 
 ## Usage
 ```
-cd wifiscan
+
 cargo run
 ```
